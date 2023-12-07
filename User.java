@@ -22,7 +22,7 @@ public class User {
 
     public void logout(){
         isLogin = false;
-        System.out.println("Keni dal me sukses");
+        System.out.println("Keni dale me sukses");
     }
 
     public User() {
@@ -57,8 +57,7 @@ public class User {
 
     public void signIn() {
         //Leart test user
-        listUserave.add(new User("Leart", "Buqaj", "lb", "111"));
-
+       listUserave.add(new User("Leart", "Buqaj", "lb", "111"));
         System.out.println("Shkruaj email");
         email = scan.nextLine();
         System.out.println("Shkruaj passwordin");
@@ -67,6 +66,7 @@ public class User {
         if (isLogin(email, password)) {
             System.out.println("Keni Hyre");
             System.out.println("Miresevini");
+
             /*System.out.println("-----------------");
             System.out.println("Zgjedhni ne menu duke shkruar numrin");
             System.out.println(" 1 - Mengjes \n 2 - Dreke \n 3 - Darke \n 4 - Desert \n 5 - Dil");
@@ -121,27 +121,7 @@ public class User {
             listUserave.add(new User(name,surname,email,password));
             System.out.println("Jeni regjistruar me sukses");
             System.out.println("Miresevini");
-            System.out.println("-----------------");
-            System.out.println("Zgjedhni ne menu duke shkruar numrin");
-            System.out.println(" 1 - Mengjes \n 2 - Dreke \n 3 - Darke \n 4 - Desert \n 5 - Dil");
-            int zgjedhjaMenu = scan.nextInt();
-            switch (zgjedhjaMenu) {
-                case 1:
-                    System.out.println();
-                    break;
-                case 2:
-                    System.out.println();
-                    break;
-                case 3:
-                    System.out.println();
-                    break;
-                case 4:
-                    System.out.println();
-                    break;
-                case 5:
-                    System.out.println();
-                    break;
-            }
+           signIn();
 
         }
     }

@@ -48,12 +48,16 @@ public class Ushqimi {
         return kategoriaKohesGatimit;
     }
 
+
+
     public void foodInfo(){
         System.out.println("------------------");
         System.out.println("Emri i ushqimit: " + emriUshqimit);
-        System.out.println("Koha e gatimit: " + kohaGatimit);
+        System.out.println("Koha e gatimit: " + kohaGatimit+" minuta");
         System.out.println("Kalorite: " + kalorite);
-        System.out.println("Ushqimi");
+        System.out.println("Ushqimi servohet ne "+getKategoriaUshqimeve());
+        System.out.println("Ushqimi ka "+getKategoriaKalorive()+" kalori");
+        System.out.println("Ushqimi behet "+ getKategoriaKohesGatimit());
     }
 
 
