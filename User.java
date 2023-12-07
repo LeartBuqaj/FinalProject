@@ -3,12 +3,15 @@ import java.util.List;
 import java.util.Scanner;
 
 public class User {
+
+    //FIELDS
     private String name;
     private String surname;
     private String email;
     private String password;
     private boolean isLogin =false;
     private List<User> listUserave = new ArrayList<>();
+    Ushqimi ushqimi;
 
     public User(String name, String surname, String email, String password) {
         this.name = name;
@@ -38,6 +41,7 @@ public class User {
     }
     public void metodatHyrese(){
         System.out.println("-------Receta-------");
+        System.out.println("Shkruaj nje nga numrat e meposhtem per te vazhduar");
         System.out.println("1.LogIn");
         System.out.println("2.SignUp");
         int userAns = scan.nextInt();
@@ -47,22 +51,47 @@ public class User {
         } else if (userAns==2) {
             signUp();
         }
+
     }
 
 
-    public void signIn(){
+    public void signIn() {
         //Leart test user
-        listUserave.add(new User("Leart","Buqaj","leartbuqaj9@gmail.com","111"));
+        listUserave.add(new User("Leart", "Buqaj", "lb", "111"));
 
         System.out.println("Shkruaj email");
         email = scan.nextLine();
         System.out.println("Shkruaj passwordin");
         password = scan.nextLine();
 
-        if (isLogin(email,password)){
+        if (isLogin(email, password)) {
             System.out.println("Keni Hyre");
             System.out.println("Miresevini");
-            System.out.println("Deshironi te dilni? (po/jo)");
+            /*System.out.println("-----------------");
+            System.out.println("Zgjedhni ne menu duke shkruar numrin");
+            System.out.println(" 1 - Mengjes \n 2 - Dreke \n 3 - Darke \n 4 - Desert \n 5 - Dil");
+            int zgjedhjaMenu = scan.nextInt();
+            switch (zgjedhjaMenu){
+                case 1:
+                    System.out.println("1 - Krepa \n 2 - Omlet \n 3 - Blla \n 4 - Blla \n 5 - Dil");
+                    if (zgjedhjaMenu==1){
+
+                    }
+                    break;
+                case 2:
+                    System.out.println();
+                    break;
+                case 3:
+                    System.out.println();
+                    break;
+                case 4:
+                    System.out.println();
+                    break;
+                case 5:
+                    System.out.println();
+                    break;
+            }*/
+          /* System.out.println("Deshironi te dilni? (po/jo)");
             String logOut = scan.nextLine();
             if (logOut.equals("po")){
                 logout();
@@ -70,7 +99,8 @@ public class User {
                 metodatHyrese();
             }
         }else {
-            System.out.println("Te dhenat e pa sakta provoni perseri");
+            System.out.println("Te dhenat e pa sakta provoni perseri");*/
+
         }
     }
 
@@ -89,6 +119,30 @@ public class User {
         }else {
             System.out.println("Llogaria u krijua me sukses");
             listUserave.add(new User(name,surname,email,password));
+            System.out.println("Jeni regjistruar me sukses");
+            System.out.println("Miresevini");
+            System.out.println("-----------------");
+            System.out.println("Zgjedhni ne menu duke shkruar numrin");
+            System.out.println(" 1 - Mengjes \n 2 - Dreke \n 3 - Darke \n 4 - Desert \n 5 - Dil");
+            int zgjedhjaMenu = scan.nextInt();
+            switch (zgjedhjaMenu) {
+                case 1:
+                    System.out.println();
+                    break;
+                case 2:
+                    System.out.println();
+                    break;
+                case 3:
+                    System.out.println();
+                    break;
+                case 4:
+                    System.out.println();
+                    break;
+                case 5:
+                    System.out.println();
+                    break;
+            }
+
         }
     }
     public boolean isUserLogin() {
