@@ -13,6 +13,8 @@ public class User {
     private List<User> listUserave = new ArrayList<>();
     Ushqimi ushqimi;
 
+
+
     public User(String name, String surname, String email, String password) {
         this.name = name;
         this.surname = surname;
@@ -20,10 +22,13 @@ public class User {
         this.password = password;
     }
 
+
     public void logout(){
-        isLogin = false;
-        System.out.println("Keni dale me sukses");
-    }
+            isLogin = false;
+            System.out.println("Faleminderit per Perdorimin e Programit");
+            System.out.println("Keni dale me sukses");
+        }
+
 
     public User() {
     }

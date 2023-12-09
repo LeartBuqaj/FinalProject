@@ -1,8 +1,8 @@
-import java.util.List;
+import java.util.ArrayList;
 
 public class Desert extends Ushqimi{
-    public Desert(String emriUshqimit, double kohaGatimit, int kalorite, KategoriaUshqimeve kategoriaUshqimeve, KategoriaKalorive kategoriaKalorive, KategoriaKohesGatimit kategoriaKohesGatimit) {
-        super(emriUshqimit, kohaGatimit, kalorite, kategoriaUshqimeve, kategoriaKalorive, kategoriaKohesGatimit);
+    public Desert(String emriUshqimit, double kohaGatimit, int kalorite, KategoriaUshqimeve kategoriaUshqimeve, KategoriaKalorive kategoriaKalorive, KategoriaKohesGatimit kategoriaKohesGatimit, ArrayList<String> cheeseCakePerberesit) {
+        super(emriUshqimit, kohaGatimit, kalorite, kategoriaUshqimeve, kategoriaKalorive, kategoriaKohesGatimit,cheeseCakePerberesit);
     }
 
     @Override
